@@ -47,11 +47,12 @@ window.renderStatistics = function (ctx, players, times) {
 
 
   var maxTime = getMaxElement(times);
-  var offsetX = 0;
-  var barHeight = 0;
   var roundTime = 0;
+  var barHeight = 0;
+  var offsetX = 0;
 
-  for (var i = 0; i < players.length; i++) {
+  var renderData = function () {
+
     roundTime = Math.round(times[i]);
     barHeight = Math.round((roundTime * BAR_MAX_HEIGHT) / maxTime);
 
@@ -64,5 +65,9 @@ window.renderStatistics = function (ctx, players, times) {
     ctx.fillText(players[i], CLOUD_X + BAR_WIDTH + offsetX, BAR_MAX_HEIGHT + CLOUD_Y + BAR_PADDING + FONT_PADDING);
     offsetX += BAR_WIDTH + GAP;
 
+  };
+
+  for (var i = 0; i < players.length; i++) {
+    renderData();
   }
 };
