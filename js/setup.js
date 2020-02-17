@@ -23,7 +23,6 @@ var wizardNew = function () {
 var wizardList = function () {
   var result = [];
   for (var i = 0; i < 4; i++) {
-    wizardNew();
     result.push(wizardNew());
   }
   return result;
