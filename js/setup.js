@@ -109,6 +109,12 @@ setupClose.addEventListener('click', function () {
   closePopup();
 });
 
+userNameField.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    event.preventDefault();
+  }
+});
+
 setupClose.addEventListener('keydown', function (evt) {
   if (evt.key === ENTER_KEY && evt.target === setupClose) {
     closePopup();
