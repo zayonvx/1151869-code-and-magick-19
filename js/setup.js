@@ -45,8 +45,7 @@ var changeAtt = function (arr, element, inputValue) {
 
   if (element === wizardFireballChange) {
     element.style.background = randomAtt;
-  }
-  else {
+  } else {
     element.style.fill = randomAtt;
   }
 };
