@@ -67,8 +67,6 @@ var wizardList = function () {
   return result;
 };
 
-userDialog.classList.remove('hidden');
-
 var similarListElement = userDialog.querySelector('.setup-similar-list');
 
 var similarWizardTemplate = document.querySelector('#similar-wizard-template')
