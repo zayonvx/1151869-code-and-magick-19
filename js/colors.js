@@ -12,5 +12,4 @@
     wizardFireballColors: WIZARD_FIREBALL_COLORS,
     textColor: TEXT_COLOR
   };
-
 })();

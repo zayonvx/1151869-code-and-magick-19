@@ -14,7 +14,6 @@
     window.userDialog.querySelector('input[name="' + inputValue + '"]').value = randomAtt;
 
     if (element === wizardFireballChange) {
-      // использую глобальную переменную?
       element.style.background = randomAtt;
     } else {
       element.style.fill = randomAtt;
@@ -43,7 +42,6 @@
 
   setupOpen.addEventListener('keydown', function (evt) {
     if (evt.key === window.keys.enter) {
-      // нужно ли объявлять константу в начале файла принимая туда window.key.enter, или допустимо писать такой код?
       openPopup();
     }
   });
@@ -66,7 +64,6 @@
 
   wizardCoatChange.addEventListener('click', function () {
     changeAtt(window.colors.wizardColors, wizardCoatChange, 'coat-color');
-    // вызываю функцию, в качестве параметра передаю глобальную переменную
   });
 
   wizardEyesChange.addEventListener('click', function () {
