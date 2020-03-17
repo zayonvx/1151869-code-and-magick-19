@@ -14,7 +14,7 @@
     window.userDialog.querySelector('input[name="' + inputValue + '"]').value = randomAtt;
 
     if (element === wizardFireballChange) {
-      // использую глобальную?
+      // использую глобальную переменную?
       element.style.background = randomAtt;
     } else {
       element.style.fill = randomAtt;
