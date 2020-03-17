@@ -44,7 +44,6 @@
         };
         dialogWindow.addEventListener('click', onClickPreventDefault);
       }
-
     };
 
     document.addEventListener('mousemove', onMouseMove);
